@@ -23,16 +23,10 @@ function Navbar() {
                 <a href='../pages/index.js' className={`${styles.navLink}`}>Home</a>
               </li>
               <li onClick={removeActive}>
-                <a href='../pages/gallery.js' className={`${styles.navLink}`}>Art Gallery</a>
+                <a href='../pages/services.js' className={`${styles.navLink}`}>Service</a>
               </li>
               <li onClick={removeActive}>
-                <a href='../pages/merch.js' className={`${styles.navLink}`}>Book a Party</a>
-              </li>
-              <li onClick={removeActive}>
-                <a href='../pages/murals.js' className={`${styles.navLink}`}>Murals</a>
-              </li>
-              <li onClick={removeActive}>
-                <a href='../pages/contact.js' className={`${styles.navLink}`}>Contact</a>
+                <a href='../pages/about.js' className={`${styles.navLink}`}>About Us</a>
               </li>
             </ul>
             <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
