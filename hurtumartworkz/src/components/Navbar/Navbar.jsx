@@ -17,7 +17,7 @@ function Navbar() {
         <header className="App-header">
           <nav className={`${styles.navbar}`}>
             {/* logo */}
-            <a href='#home' className={`${styles.logo}`}>Dev. </a>
+            <a href='#home' className={`${styles.logo}`}> Hurtnum Artworkz</a>
             <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
                 <a href='../pages/index.js' className={`${styles.navLink}`}>Home</a>
