@@ -8,7 +8,7 @@ function Footer(){
             <div className='Footer-logo'>
                 <p className={`${styles.logo}`}>Hurtnum Artworkz</p>
             </div>
-            
+
             <div className='Footer-socials'>
 
             </div>
@@ -16,5 +16,6 @@ function Footer(){
         </footer>
 
         </div>
+    );
 }; 
 export default Footer;
