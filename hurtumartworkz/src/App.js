@@ -4,32 +4,27 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
+//import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/about.js";
-import Home from "./pages";
-import Service from "./pages/services"; 
+import Home from "./pages/index.js";
+import Service from "./pages/services.js"; 
 
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Router>
+      <Router>
           <Navbar />
           <Routes>
-            <Route exact path="./pages/" element={<Home />}/>
-            <Route path="./pages/about" element={<About />}/>
-            <Route path="./pages/services" element={<Service />}/>
+            <Route exact path="/index" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Service />} />
           </Routes>
-        </Router>
-      </header>
-
-        <Footer />
-
-    </div>
+      </Router>
+  
+      //<Footer />
   );
-}
+};
 
 export default App;
