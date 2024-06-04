@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import  styles from './Navbar.module.css';
+import  styles from './Navbar.module.css'
+import logo from "../images/logo.png"
 
 function Navbar() {
     // adding the states 
@@ -17,7 +18,7 @@ function Navbar() {
         <header className="App-header">
           <nav className={`${styles.navbar}`}>
             {/* logo */}
-            <a href='#home' className={`${styles.logo}`}> Hurtnum Artworkz</a>
+            <a href='#home' className={`${styles.logo}`}> <img src={logo} alt="Hurtnum Logo"></img></a>
             <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
                 <a href='../pages/index.js' className={`${styles.navLink}`}>Home</a>
@@ -27,6 +28,9 @@ function Navbar() {
               </li>
               <li onClick={removeActive}>
                 <a href='../pages/about.js' className={`${styles.navLink}`}>About Us</a>
+              </li>
+              <li onClick={removeActive}>
+                <a href='../pages/about.js' className={`${styles.navLink}`}>Contact Us</a>
               </li>
             </ul>
             <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>

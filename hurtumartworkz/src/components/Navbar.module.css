@@ -6,6 +6,7 @@
   
   ul {
     list-style: none;
+    right: 0px;
   }
   
   a {
@@ -13,17 +14,24 @@
     color: black;
     font-size: 18px;
   }
+
+  a:hover { 
+    text-decoration: underline; 
+    text-decoration-color: forestgreen;
+    text-decoration-thickness: 5px;
+  } 
   
   /* navbar */
   .navbar {
-    background-color: aliceblue;
+    background-color: #ffffff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
     min-height: 70px;
-  }
+    border-color: black;
+}
   
   
   /* logo  */

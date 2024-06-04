@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ /* footer */
+.footer {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+        gap: 40px;
+        min-height: 150px;
+        display: flex;
+        justify-content: center;
+      }
+
+.logo {
+    left: 50%;
+    right: 50%;
+    display:flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.socials {
+  width: 50px;
+  height: 50px;
+}
+
+.socialMedia {
+  left: 50%;
+  right: 50%;
+  gap: 10px;
+  padding-bottom: 10px;
+  display:flex;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
