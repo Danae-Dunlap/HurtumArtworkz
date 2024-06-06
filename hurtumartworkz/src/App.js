@@ -1,30 +1,29 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-//import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./pages/about.js";
-import Home from "./pages/index.js";
-import Service from "./pages/services.js"; 
-
+import './index.css';
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Home from './pages/';
+import Services from './pages/services';
+import About from './pages/about';
+import Menu from './components/Navbar/Menu';
+import { useState } from 'react';
 
 function App() {
 
+  const[clicked,isClicked] = useState(false)
   return (
-      <Router>
-          <Navbar />
-          <Routes>
-            <Route exact path="/index" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Service />} />
-          </Routes>
-      </Router>
-  
-      //<Footer />
+
+    <Router>
+  <Navbar clicked={clicked} isClicked={isClicked}/>
+  {clicked?<Menu/>:null}
+    <Routes>
+      <Route exact path="" element={<Home />} />
+      <Route exact path="services" element={<Services />} />
+      <Route exact path="about" element={<About/>}/>
+
+    </Routes>
+    </Router>
+
   );
-};
+}
 
 export default App;

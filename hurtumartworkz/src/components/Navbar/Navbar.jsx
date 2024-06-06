@@ -1,27 +1,46 @@
-import React from "react"; 
-import {Nav, NavLink, NavMenu} from "./NavElements.jsx"; 
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
+import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+function Navbar({clicked, isClicked}) {
 
-const Navbar = () => {
-    return (
-      <>
-      <Nav>
-        <NavMenu>
-        <NavLink to="../pages/index.js" activeStyle>
-          Home
-          </NavLink>
-          <NavLink to="../pages/about.js" activeStyle>
-          About
-          </NavLink>
-          <NavLink to="../pages/services.js" activeStyle>
-          Services
-          </NavLink>
-        
-        </NavMenu>
-      </Nav>
-      </>
-
-    );
+  const handleClicked = () => {
+    isClicked(!clicked);
+    console.log("clicked")
   };
+  return (
+    <div className="Nav">
+      <ul className="NavbarWrapper">
+        <li className="NavLogo">
+          <Link style={{textDecoration:'none', color:'white'}} to="/">
+            Navbar
+          </Link>
+        </li>
+        <li className="NavElements">
+          <NavLink className="Link" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li className="NavElements">
+          <NavLink className="Link" to="/about">
+            About Us
+          </NavLink>
+        </li>
+        <li className="NavElements">
+          <NavLink className="Link" to="/services">
+            Contact Us
+          </NavLink>
+        </li>
+      </ul>
+      {!clicked ? (
+        <GiHamburgerMenu onClick={handleClicked} className="Icon" />
+      ) : (
+        <ImCross onClick={handleClicked} className="Icon" />
+      )}
+    </div>
+  );
+}
 
 export default Navbar;
