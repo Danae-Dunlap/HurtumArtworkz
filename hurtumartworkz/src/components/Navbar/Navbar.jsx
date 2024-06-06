@@ -15,7 +15,7 @@ function Navbar({clicked, isClicked}) {
       <ul className="NavbarWrapper">
         <li className="NavLogo">
           <Link style={{textDecoration:'none', color:'white'}} to="/">
-            Navbar
+            Hurtnum Artworkz
           </Link>
         </li>
         <li className="NavElements">
