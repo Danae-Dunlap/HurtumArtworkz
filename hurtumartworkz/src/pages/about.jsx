@@ -14,6 +14,7 @@ function About(){
       <h1>Reviews</h1>
     </div>
 
+    <Footer/>
   </div>
   );
 };
