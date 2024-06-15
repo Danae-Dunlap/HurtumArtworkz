@@ -1,95 +1,99 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
 }
 
-:root{
-    --mainColor: #29335C;
-    --mainColorLight:#576ab6; 
-    --secondaryColor:#DB2839;
-    --textColor:#eee;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
-.Nav{
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding:0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor); 
-
+.navbar {
+  height: 60px;
+  background-color: #fcfcfc;
+  position: relative;
 }
 
-.NavbarWrapper{
- list-style-type: none;
- margin: 0;
- padding: 0;
- justify-content: center;
+.menu-icon {
+  display: none;
 }
 
-.NavLogo{
-    float: left;
-    font-size: 25px;
-    font-weight: 50;
-    margin: 0 1.5rem ;
-    transition: 0.2s ease-in;  
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
-.NavElements{
-    display: inline;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: 200;
-    padding: 10px 20px 10px 20px;
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
 }
 
-.Link{
-    text-decoration: none;
-    color: white;
-
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
 }
-.Link:hover{
+
+.nav-elements ul a.active {
+  color: #00923d;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #008f30;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
     cursor: pointer;
-   color: #E93A7D;
-    border-radius: 20px;
-    transition: 0.5ms;
+  }
 
-}
-.active{
-    cursor: pointer;
-   color: #E93A7D;
-    border-radius: 20px;
-    transition: 0.5ms;
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #000000;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
 
-}
-.Icon{
-    display: none;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-}
+  .nav-elements.active {
+    width: 270px;
+  }
 
-@media screen and (max-width: 925px){
-    .Nav{
-        padding: 25px 0px  25px 20px;
-    }
-        .NavElements{
-            display: none;
-        }
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
 
-        .Icon{
-            display: inline;
-            position: relative;
-            left: 35%;
-        }
-        .NavLogo{
-            margin: 0;
-            transition: 0.2s ease-in-out;
-        }
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
 }

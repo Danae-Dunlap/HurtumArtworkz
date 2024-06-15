@@ -1,46 +1,40 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./Navbar.css";
-import { ImCross } from "react-icons/im";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { GiHamburgerMenu as Hamburger} from "react-icons/gi";
+import './Navbar.css'
 
-function Navbar({clicked, isClicked}) {
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false)
 
-  const handleClicked = () => {
-    isClicked(!clicked);
-    console.log("clicked")
-  };
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
+
   return (
-    <div className="Nav">
-      <ul className="NavbarWrapper">
-        <li className="NavLogo">
-          <Link style={{textDecoration:'none', color:'white'}} to="/">
-            Hurtnum Artworkz
-          </Link>
-        </li>
-        <li className="NavElements">
-          <NavLink className="Link" to="/">
-            Home
-          </NavLink>
-        </li>
-        <li className="NavElements">
-          <NavLink className="Link" to="/about">
-            About Us
-          </NavLink>
-        </li>
-        <li className="NavElements">
-          <NavLink className="Link" to="/services">
-            Contact Us
-          </NavLink>
-        </li>
-      </ul>
-      {!clicked ? (
-        <GiHamburgerMenu onClick={handleClicked} className="Icon" />
-      ) : (
-        <ImCross onClick={handleClicked} className="Icon" />
-      )}
-    </div>
-  );
+    <nav className="navbar">
+      <div className="container">
+        <div className="logo">
+          <p> Hurtum Artworkz</p>
+        </div>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <Hamburger />
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services">Services</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
-export default Navbar;
+export default Navbar
