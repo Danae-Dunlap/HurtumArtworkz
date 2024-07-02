@@ -1,6 +1,7 @@
 import React from "react"; 
 import Footer from "../components/Footer/Footer"; 
 import Carousel from "../components/Carousel/Carousel"
+import ServicesCard from "../components/ServicesCard/ServicesCard";
 
 
 function Home (){
@@ -33,6 +34,13 @@ function Home (){
           <h2>100</h2>
           Pieces Sold
         </div>
+      </div>
+
+      <div className="service-link">
+        <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Paint Parties"} page={'../services.jsx'} />
+        <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Murals"} page={'../services.jsx'} />
+        <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Custom Tees"} page={'../services.jsx'} />
+        <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Original Pieces"} page={'../services.jsx'} />
       </div>
 
       <div>
