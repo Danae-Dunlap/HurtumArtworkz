@@ -1,10 +1,21 @@
 import React from "react"; 
+import Footer from "../components/Footer/Footer"; 
+import Carousel from "../components/Carousel/Carousel"
+
 
 function Home (){
+
+  const images = [
+      'https://via.placeholder.com/800x400.png?text=Slide+1',
+      'https://via.placeholder.com/800x400.png?text=Slide+2',
+      'https://via.placeholder.com/800x400.png?text=Slide+3'
+  ]
+  
   return(
     <div>
       <div>
         <h1> Check Out Our Amazing Works</h1>
+        <Carousel images={images} interval={3000}/>
         <button>Shop Now</button>
       </div>
       <div>
@@ -36,6 +47,7 @@ function Home (){
           <input type="submit"/> <br/>
         </form>
       </div>
+      <Footer/>
     </div>
   );
 };
