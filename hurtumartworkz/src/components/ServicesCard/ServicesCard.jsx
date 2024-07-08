@@ -11,11 +11,11 @@ const ServicesCard = ({image, title, page}) => {
     }
 
     return (
-        <div className="services">
+        <span className="services">
             <img src={image} alt="Service" className="service-image" />
             <h2> {title}</h2>
             <button onClick={routeChange} className='service-button'> Explore </button>
-        </div>
+        </span>
     )
 }
 
