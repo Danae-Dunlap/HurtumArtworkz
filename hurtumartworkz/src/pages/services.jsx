@@ -1,6 +1,7 @@
 import React from "react"
 import ServicesCard from "../components/ServicesCard/ServicesCard"
-import Navbar from "../components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer"
+import "./services.css"
 
 function Services(){
   return(
@@ -11,6 +12,7 @@ function Services(){
     <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Murals"} page={'../services.jsx'} />
     <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Custom Tees"} page={'../services.jsx'} />
     <ServicesCard image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Original Pieces"} page={'../services.jsx'} />
+    <Footer />
 </div>  
 );
 };
