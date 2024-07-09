@@ -1,6 +1,4 @@
 import React from 'react'
-import fillStar from '../../images/gold_star.jpg'
-import blankStar from '../../images/blank_star.jpg'
 import './Reviews.css'
 
 const Reviews = ({message, user, rating}) => {

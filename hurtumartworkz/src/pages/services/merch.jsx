@@ -2,7 +2,9 @@ import React from "react"
 
 function Merch() {
 
-    return (<div></div>);
+    return (<div>
+        <h1> Original Pieces </h1>
+    </div>);
 
 }; 
   

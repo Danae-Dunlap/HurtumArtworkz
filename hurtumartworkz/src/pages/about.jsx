@@ -1,6 +1,7 @@
 import React from "react"; 
 import Footer from "../components/Footer/Footer"; 
 import Reviews from "../components/Reviews/Reviews";
+
 import "./About.css"
 
 function About(){

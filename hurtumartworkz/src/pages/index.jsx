@@ -1,6 +1,7 @@
 import React from "react"; 
 import Footer from "../components/Footer/Footer"; 
 import Carousel from "../components/Carousel/Carousel"
+import ContactForm from "../components/Contact/contact"
 import "./index.css"
 
 function Home (){
@@ -36,15 +37,7 @@ function Home (){
       </div>
       <div>
         <h1>Contact Us</h1>
-        <form>
-          <label className="contact-label">Name</label><br/>
-          <input className="contact-input" type="text"/><br/>
-          <label className="contact-label">Email</label><br/>
-          <input className="contact-input" type="text"/><br/>
-          <label className="contact-label">Message</label> <br/>
-          <input className="contact-message" type="text"/> <br/>
-          <input type="submit" className="submit_button"/> <br/>
-        </form>
+        <ContactForm/>
       </div>
       <Footer/>
     </div>
