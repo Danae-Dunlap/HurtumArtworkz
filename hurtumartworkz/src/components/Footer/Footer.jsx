@@ -5,22 +5,34 @@ import instagram from "../../images/socials/instagram.png"
 import facebook from "../../images/socials/facebook.png"
 import youtube from "../../images/socials/youtube.png"
 import twitter from "../../images/socials/twitter.png"
-function Footer(){
-    return(
-        <div className='App'>
+
+const Footer = () => {
+    return (
         <footer className="footer">
-            <div className="logo">
-            <a href='#home' className="logo"> <img src={logo} alt="Hurtnum Logo"></img></a>
-                <ul className="socialMedia">
-                    <li><img src={instagram} alt="Instagram Logo" className="socials"/></li>
-                    <li><img src={facebook} alt="Facebook Logo" className="socials"/></li>
-                    <li><img src={youtube} alt="Youtube Logo" className="socials"/></li>
-                    <li><img src={twitter} alt="Twitter Logo" className="socials"/></li>
-                </ul>
-                <p>@ Hurtnum Artworkz 2024</p>
+            <div className="footer-content">
+                <div className="footer-logo">
+                    <img src={logo} alt="Company Logo" />
+                </div>
+                <div className="footer-social-media">
+                    <ul className = "footer-social-media-list">
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img className="footer-social-media-img" src={facebook} alt="facebook logo"></img>
+                    </a> </li>.
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img className="footer-social-media-img" src={twitter} alt="twitter logo"></img>
+                    </a> </li>.
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img className="footer-social-media-img" src={youtube} alt="youtube logo"></img>
+                    </a> </li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img className="footer-social-media-img" src={instagram} alt="instagram logo"></img>
+                    </a>
+                    </li>
+                    </ul>
+                </div>
             </div>
         </footer>
-        </div>
     );
-}; 
+};
+
 export default Footer;
