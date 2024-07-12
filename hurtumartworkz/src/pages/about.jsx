@@ -1,7 +1,8 @@
 import React from "react"; 
-import Footer from "../components/Footer/Footer"; 
+import Footer from "../components/Footer/footer"; 
 import Reviews from "../components/Reviews/Reviews";
-import "./About.css"
+
+import "./about.css"
 
 function About(){
   return(
