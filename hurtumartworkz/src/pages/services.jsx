@@ -1,5 +1,5 @@
 import React from "react"
-import ServicesCard from "../components/ServicesCard/ServicesCard"
+import ServicesCard from "../components/ServicesCard/servicesCard"
 import Footer from "../components/Footer/footer"
 import "./services.css"
 

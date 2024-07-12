@@ -1,6 +1,6 @@
 import React from "react"; 
-import Footer from "../components/Footer/Footer"; 
-import Carousel from "../components/Carousel/Carousel"
+import Footer from "../components/Footer/footer"; 
+import Carousel from "../components/Carousel/carousel"
 import ContactForm from "../components/Contact/contact"
 import "./index.css"
 
