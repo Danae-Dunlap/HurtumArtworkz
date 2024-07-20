@@ -1,7 +1,7 @@
-import  styles from './bookings.module.css';
+import  styles from './bookings.css';
 import React from "react"; 
 
-const Bookings = (title, description) => {
+const Bookings = ({title, description}) => {
     return(
         <div className="bookings">
             <title>{title}</title>
@@ -28,4 +28,4 @@ const Bookings = (title, description) => {
 
 }
 
-export default OptionsPage; 
+export default Bookings; 

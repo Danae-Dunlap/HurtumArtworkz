@@ -7,7 +7,7 @@ function Party() {
 
     return (
     <div>
-        <Bookings title = {title} description={description} />
+        <Bookings title={title} description={description} />
     </div>);
 
 }; 

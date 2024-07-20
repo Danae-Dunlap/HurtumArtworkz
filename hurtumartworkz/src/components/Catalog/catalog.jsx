@@ -1,6 +1,6 @@
 import React from "react"
 
-const Catalog = (image, title, price, routeChange, isAvailable) => {
+const Catalog = ({image, title, price, isAvailable}) => {
 
     return(
         <div>
@@ -8,12 +8,12 @@ const Catalog = (image, title, price, routeChange, isAvailable) => {
             <img src={image} alt="option" className="service-image" />
             <h2> {title}</h2>
 
-            {{if (isAvailable) {
+            if (isAvailable) {
                 <div>
                     <h4>{price}</h4>
                     <button  className='service-button'> Buy Now </button>
                 </div>  
-            }}}
+            }
             
         </span>
         </div>

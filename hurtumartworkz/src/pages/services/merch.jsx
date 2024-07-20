@@ -1,4 +1,5 @@
 import React from "react"
+import Catalog from "../../components/Catalog/catalog";
 
 function Merch() {
 
