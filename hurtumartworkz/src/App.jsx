@@ -5,6 +5,7 @@ import About from './pages/About.jsx';
 import Gallery from './pages/services/Gallery.jsx';
 import Merch from './pages/services/Merch.jsx'; 
 import Party from './pages/services/Party.jsx'; 
+import Home from './pages/Index.jsx';
 import Murals from './pages/services/Murals.jsx';
 import './index.css'; 
 

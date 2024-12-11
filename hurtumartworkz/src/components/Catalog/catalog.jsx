@@ -8,7 +8,7 @@ const Catalog = ({image, title, price, isAvailable}) => {
             <img src={image} alt="option" className="service-image" />
             <h2> {title}</h2>
 
-            if (isAvailable) {
+            {isAvailable == true && 
                 <div>
                     <h4>{price}</h4>
                     <button  className='service-button'> Buy Now </button>
