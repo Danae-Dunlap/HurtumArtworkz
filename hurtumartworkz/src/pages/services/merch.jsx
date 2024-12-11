@@ -1,5 +1,6 @@
 import React from "react"
-import Catalog from "../../components/Catalog/catalog";
+import Catalog from "../../components/Catalog/Catalog";
+import Footer from "../../components/Footer/Footer"; 
 
 function Merch() {
 
@@ -25,6 +26,8 @@ function Merch() {
             <label>Brief Description</label>
             <input type="text" />
         </form>
+
+        <Footer />
     </div>);
 
 }; 

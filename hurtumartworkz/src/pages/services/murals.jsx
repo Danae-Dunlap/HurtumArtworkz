@@ -1,5 +1,6 @@
 import React from "react"
-import Bookings from "../../components/Bookings/bookings"
+import Bookings from "../../components/Bookings/Bookings"
+import Footer from "../../components/Footer/Footer"; 
 
 function Murals() {
     const title = "Get a Mural"
@@ -7,6 +8,7 @@ function Murals() {
 
     return (<div>
         <Bookings title = {title} description={description} />
+        <Footer />
     </div>);
 
 }; 

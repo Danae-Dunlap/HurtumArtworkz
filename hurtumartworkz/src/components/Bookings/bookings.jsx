@@ -1,4 +1,3 @@
-import  styles from './bookings.css';
 import React from "react"; 
 
 const Bookings = ({title, description}) => {
