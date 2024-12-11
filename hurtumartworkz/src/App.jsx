@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Services from './Services.jsx';
+import Services from './pages/Services.jsx';
 import About from './pages/About.jsx';
 import Gallery from './pages/services/Gallery.jsx';
 import Merch from './pages/services/Merch.jsx'; 

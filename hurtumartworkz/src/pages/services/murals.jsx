@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 
 function Murals() {
     const title = "Get a Mural"
-    const description = "Come up with some description"
+    const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fuga nemo totam fugit optio. Officiis ea autem animi vel."
 
     return (<div>
         <Bookings title = {title} description={description} />

@@ -1,6 +1,6 @@
 import React from "react"
-import ServicesCard from "./components/ServicesCard/ServicesCard"
-import Footer from "./components/Footer/Footer"
+import ServicesCard from "../components/ServicesCard/ServicesCard"
+import Footer from "../components/Footer/Footer"
 
 function Services(){
   return(
