@@ -5,11 +5,14 @@ import Footer from "../../components/Footer/Footer";
 function Merch() {
 
     return (<div>
+      {/**Opening Section */}
         <h1 className="text-5xl text-center font-medium py-3 justify-center my-2"> Get Custom Apparel</h1>
         <p className="text-lg mt-4 leading-relaxed text-black px-3"> Wear your individuality with pride through Hurtnum Artworks’ handcrafted apparel! Each design is a unique blend of creativity and craftsmanship, made to stand out and reflect your personal style. <br />
         From T-shirts and hoodies to hats and more, we bring your vision to life on any item. Every piece is hand-designed with care and a flair for originality, ensuring no two creations are ever the same.
         Discover wearable art that’s as bold, dynamic, and unique as you are!
         </p>
+
+        {/**Current Work Gallery Section */}
         <h1 className="text-5xl text-center font-medium py-3 justify-center my-2"> Look at our current works</h1> 
         <div className="grid grid-cols-3 justify-center items-center">
         <Catalog image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Generic Merch"} price={"10.99"} isAvailable={true}/>
@@ -17,6 +20,7 @@ function Merch() {
         <Catalog image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Generic Merch"} price={"10.99"} isAvailable={true}/>
         </div>
 
+        {/**Past Work Gallery Section */}
         <h1 className="text-5xl text-center font-medium py-3 justify-center my-2"> Look at our past works </h1>
         <div className="grid grid-cols-3 justify-center items-center">
         <Catalog image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Generic Merch"} price={"10.99"} isAvailable={false}/>
@@ -25,7 +29,7 @@ function Merch() {
         </div>
 
         {/*Temporary Form*/}
-    <div className="flex flex-col items-center justify-center py-12">
+      <div className="flex flex-col items-center justify-center py-12">
       <h2 className="text-6xl font-bold mb-8">Make a Request</h2>
       <form className="w-full max-w-xl space-y-4">
         {/* Name Input */}

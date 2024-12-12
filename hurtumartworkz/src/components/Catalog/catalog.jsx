@@ -5,6 +5,7 @@ const Catalog = ({ image, title, price, isAvailable }) => {
     <div className="flex items-center justify-center min-h-screen">
       {/* Grid Container */}
       <div className="grid grid-cols-1 gap-6 text-center">
+        
         {/* Catalog Item */}
         <div className="flex flex-col items-center justify-center p-2 border rounded-lg shadow-lg">
           <img

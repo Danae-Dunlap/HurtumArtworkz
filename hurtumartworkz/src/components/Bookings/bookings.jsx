@@ -3,17 +3,18 @@ import React from "react";
 const Bookings = ({title, description}) => {
     return(
         <div className="items-center">
-            <h1 className="text-5xl text-center font-medium py-3 justify-center my-2">{title}</h1>
-            <p className="text-lg mt-4 leading-relaxed text-black px-3">{description}</p>
+        {/** Opening Section */}
+          <h1 className="text-5xl text-center font-medium py-3 justify-center my-2">{title}</h1>
+          <p className="text-lg mt-4 leading-relaxed text-black px-3">{description}</p>
 
-            <h4 className="text-3xl text-center font-medium py-3 justify-center my-2">Choose a time that works for you</h4>
+          <h4 className="text-3xl text-center font-medium py-3 justify-center my-2">Choose a time that works for you</h4>
 
-            <h4 className="text-3xl text-center font-medium py-3 justify-center my-2">Choose one of our options</h4>
-            {/** Create an option component*/}
+          {/** Create an option component*/}
+          <h4 className="text-3xl text-center font-medium py-3 justify-center my-2">Choose one of our options</h4>
+          
         
-        
-
-        <div className="flex flex-col items-center justify-center py-12">
+      {/* Temporary Form */}
+      <div className="flex flex-col items-center justify-center py-12">
         <form className="w-full max-w-xl space-y-4">
         {/* Name Input */}
         <label for="default-input" class="block text-2xl text-black font-semibold">Name</label>

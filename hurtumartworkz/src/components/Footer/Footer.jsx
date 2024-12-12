@@ -12,6 +12,7 @@ const Footer = () => {
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-black sm:text-center">© 2024 <a href="#" class="hover:underline">Hurtnum™</a>. All Rights Reserved.
                 </span>
+                {/**Social Media Section*/}
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
                     <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <img class="w-10 h-10" aria-hidden="true" src={facebook} alt="facebook logo" fill="currentColor" viewBox="0 0 21 16"/>
