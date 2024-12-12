@@ -12,10 +12,11 @@ function About() {
           <h1 className="text-4xl font-bold mb-2 leading-tight px-2">Our Story</h1>
         
           <p className="text-lg mt-4 leading-relaxed text-black px-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, atque! Earum, odio? Quis nulla impedit corrupti.
-            Repellat ad cumque magni eum at eius, molestiae, minima quaerat eveniet fugiat voluptas, deleniti delectus inventore
-            consequatur omnis reiciendis hic dolor atque nam quod repudiandae. Commodi vel quod consequatur rem necessitatibus
-            voluptatibus provident dolore?
+          Hurtnum Artworks is more than just an art business—it’s a passion project built on love, creativity, and community. Founded by husband-and-wife duo Jay and Jonae McCoy, Hurtnum Artworks combines the artistic talents of Jay with the business acumen of Jonae to create a brand that celebrates the beauty of self-expression. <br />
+Jay’s journey as an artist began in high school, where his passion for creating art grew into a lifelong dedication. Over the years, his skills have evolved from painting and murals to custom apparel and much more. In 2019, the McCoys took a leap of faith and officially trademarked Hurtnum Artworks, turning Jay’s dream into a thriving business. <br />
+While Jay brings bold, vibrant ideas to life through his artwork, Jonae ensures the vision of Hurtnum Artworks runs smoothly, connecting with clients and fostering relationships that turn creativity into opportunity. Together, they’ve built a family-owned brand that’s as personal as it is professional.
+At Hurtnum Artworks, every creation is crafted with care, passion, and a commitment to making art accessible and enjoyable for all.
+
           </p>
           <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg rounded-md hover:bg-green-700">
             Support Us

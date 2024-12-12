@@ -4,6 +4,11 @@ import Catalog from "../../components/Catalog/Catalog";
 function Gallery() {
 
     return (<div className="items-center">
+        <h1 className="text-5xl text-center font-medium py-3 justify-center my-2"> Explore Our Art</h1>
+        <p className="text-lg mt-4 leading-relaxed text-black px-3">Bring the beauty of art into your life with Hurtnum Artworks' traditional creations. Whether you're looking to purchase a pre-existing piece or commission a custom mural, we’ve got you covered. <br />
+        Our artworks are crafted with passion, blending contemporary and urban styles to create stunning, one-of-a-kind pieces. A custom mural can transform your space into a vibrant masterpiece, while our ready-made works are perfect for adding a unique touch to your home or office. <br />
+        Let us turn your walls into a canvas or find the perfect piece to express your style!
+        </p>
         <h1 className="text-5xl text-center font-medium py-3 justify-center my-2"> Look at our current works</h1> 
         <div className="grid grid-cols-3 justify-center items-center">
         <Catalog image={'https://via.placeholder.com/800x400.png?text=Slide+3'} title={"Generic Painting"} price={"10.99"} isAvailable={true}/>

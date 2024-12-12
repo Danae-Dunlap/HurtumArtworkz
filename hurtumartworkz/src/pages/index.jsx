@@ -23,9 +23,7 @@ function Home() {
         The Most Authentic Pieces <br /> For the Most Authentic Prices
       </h2>
       <p className="text-lg mt-4 leading-relaxed text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id lectus 
-        sit amet augue aliquet consectetur. Donec interdum, sem et facilisis luctus, 
-        neque sapien tincidunt odio, et efficitur tellus lacus tincidunt metus.
+      At Hurtnum Artworks, creativity runs in the family. As a family-owned art studio, we pour our passion for self-expression into every piece we create. From custom apparel and stunning paintings to vibrant murals and unforgettable paint parties, we bring art to life in a way that’s meaningful and personal. Whether you’re here to find a unique masterpiece, host a creative gathering, or add a splash of color to your world, Hurtnum Artworks is where artistry meets community. Let’s create something beautiful together!
       </p>
       <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg rounded-md hover:bg-green-700">
         Learn More
