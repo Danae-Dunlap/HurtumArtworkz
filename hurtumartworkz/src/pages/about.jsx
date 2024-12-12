@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import Reviews from "../components/Reviews/Reviews";
+import './Timeline.css'; 
 
 function About() {
   return (
@@ -28,7 +29,52 @@ function About() {
           />
         </div>
       </div>
+    
+      {/**History Section */}
+      <div className="text-center  mt-12">
+        <h1 className="text-4xl font-bold mb-6">Our History</h1>
+        <section class="timeline">
+          <div class="container">
+          
+          {/**Item 1 */}
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInLeft">
+                <h2>Founding</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              </div>
+            </div> 
 
+            {/**Item 2*/}
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInRight">
+                <h2>Growth Expansion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              </div>
+            </div>   
+
+            {/**Item 3 */}
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInLeft">
+                <h2>Major Achievements</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              </div>
+            </div> 
+
+            {/**Item 4 */}
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInRight">
+                <h2>Recent Milestones</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              </div>
+            </div>   
+          
+          </div>
+        </section>
+      </div>
       {/**Review Section*/}
       <div className="text-center mt-12">
         <h1 className="text-4xl font-bold mb-6">Reviews</h1>

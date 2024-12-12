@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[70px] bg-[#fcfcfc] shadow-sm top-0 w-full z-10">
+    <nav className="h-[70px] bg-[#00923d] shadow-sm top-0 w-full z-10">
       <div className="max-w-[1200px] mx-auto px-4 flex justify-between items-center h-full">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`absolute md:relative left-0 w-full md:w-auto bg-[#fcfcfc] md:flex md:items-center md:space-x-8 ${
+          className={`absolute md:relative left-0 w-full md:w-auto md:flex md:items-center md:space-x-8 ${
             showNavbar ? "block" : "hidden"
           }`}
         >
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li className="group">
               <NavLink
                 to="/"
-                className="text-black hover:text-[#00923d] transition"
+                className="text-black hover:text-[#fcfcfc] transition"
                 activeClassName="text-[#00923d] font-medium"
               >
                 Home
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="group">
               <NavLink
                 to="/about"
-                className="text-black hover:text-[#00923d] transition"
+                className="text-black hover:text-[#fcfcfc] transition"
                 activeClassName="text-[#00923d] font-medium"
               >
                 About Us
@@ -53,7 +53,7 @@ const Navbar = () => {
             <li className="group">
               <NavLink
                 to="/services"
-                className="text-black hover:text-[#00923d] transition"
+                className="text-black hover:text-[#fcfcfc] transition"
                 activeClassName="text-[#00923d] font-medium"
               >
                 Services

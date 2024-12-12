@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
-import Carousel from "../components/Bookings/Carousel/Carousel";
+import Carousel from "../components/Carousel/Carousel";
 import ContactForm from "../components/Contact/Contact";
 
 function Home() {
