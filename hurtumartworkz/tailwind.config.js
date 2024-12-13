@@ -2,8 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Poppins: ["Poppins", "serif"]
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ]
 }
 

@@ -13,13 +13,12 @@ const paintDescrip = "From captivating canvas paintings to stunning mixed-media 
 
 function Services(){
   return(
-  <div className="items-center">
+  <div className="items-center min-h-screen">
     {/**Opening Section*/}
-    <h1 className="text-5xl font-bold mb-2 leading-tight px-2 justify-center text-center py-3 mt-3">Check Out Our Services</h1>
+    <h1 className="text-5xl font-bold leading-tight p-2.5 mt-5 text-neutral-950 text-center font-Poppins">Check Out Our Services</h1>
 
-    <p className="pt-3 px-7 pb-3 text-lg">At Hurtnum Artworks, we believe art should be bold, meaningful, and accessible to everyone. Whether you're looking for a unique experience, a statement piece, or custom creations, we’ve got you covered with our range of services. <br />
-
-    At Hurtnum Artworks, every creation reflects our love for art and our commitment to making it something everyone can enjoy. Whether you're looking to make memories, add flair to your surroundings, or express yourself in a unique way, we’re here to help you d
+    <p className="text-lg mt-4 leading-relaxed text-neutral-900 py-2.5 mr-5 text-center font-Poppins px-16">Whether you're looking for a one-of-a-kind piece that tells your story, a statement artwork that becomes the focal point of a room, or a custom design that reflects your individual taste, Hurtnum Artworks offers a diverse range of services to meet your needs. Our custom creations are designed with you in mind, ensuring that every piece is a perfect reflection of your vision, personality, and style.<br />
+    At Hurtnum Artworks, every creation reflects our love for art and our commitment to making it something everyone can enjoy. We strive to make art something everyone can enjoy, appreciate, and incorporate into their everyday lives, creating pieces that not only beautify spaces but also enrich the experiences of those who interact with them. Whether you're looking to make memories, add flair to your surroundings, or express yourself in a unique way, we’re here to help you bring the picture in your head to paper.
     </p>
 
     {/**Services Section */}

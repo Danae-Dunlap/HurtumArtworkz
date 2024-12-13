@@ -2,35 +2,64 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <section class="bg-white">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
-    {/**Form Section*/}
-    <form action="#" class="space-y-8">
-        {/**Name Input*/}
+  <div class="w-full h-full mx-auto py-4 px-4 animate-fade-up">
+    <div class="flex flex-wrap">
+
+      <div class="w-full lg:w-5/12 px-4 mt-12 lg:mt-0">
         <div>
-            <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Name</label>
-            <input type="text" id="name" class="block p-3 w-full text-gray-900 text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="John Doe" required />
+          <div>
+            <h2 class="text-5xl font-bold leading-tight text-neutral-950 font-Poppins pb-2">Contact us</h2>
+            <p class="text-neutral-900 font-Poppins">Let us know what's on your mind.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+              <img class="w-10 h-10" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg" alt="Phone"/>
+              <p class="text-neutral-800 font-Poppins">+1258 3258 5679</p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img class="w-10 h-10" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg" alt="Email"/>
+              <p class="text-neutral-800 font-Poppins">hello@workik.com</p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img class="w-10 h-10" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg" alt="Address"/>
+              <p class="text-neutral-800 font-Poppins">102 street, y cross 485656</p>
+            </div>
+          </div>
         </div>
-        {/**Email Input */}
-        <div>
-            <label for="email" class="block mb-2 text-lg font-medium text-gray-900">Email</label>
-            <input type="email" id="email" class="block p-3 w-full text-gray-900 text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
-        </div>
-        {/**Subject Line Input*/}
-        <div>
-            <label for="subject" class="block mb-2 text-lg font-medium text-gray-900">Subject</label>
-            <input type="text" id="subject" class="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required/>
-        </div>
-        {/**Email Body Input */}
-        <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Message</label>
-            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-        </div>
-        <button type="submit" class="py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-    </form>
-</div>
-</section>);
+      </div>
+
+      <div class="w-full lg:w-7/12 border-b lg:border-b-0 lg:border-l border-gray-300 px-4">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold mb-2" for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="FirstName" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2" for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="LastName" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2" for="email">EMAIL</label>
+              <input type="email" id="email" name="Email" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2" for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="PhoneNumber" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-500"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2" for="message">WHAT DO YOU HAVE IN MIND</label>
+            <textarea id="message" name="Message" rows="6" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-500" placeholder="Please enter your query..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="mt-6 px-6 py-2 ml-3 bg-green-600 text-white text-lg rounded-md hover:bg-green-700">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+);
 };
 
 export default ContactForm;

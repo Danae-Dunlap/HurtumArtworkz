@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const Carousel = ({ images, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,13 +31,15 @@ const Carousel = ({ images, interval = 3000 }) => {
       />
 
       {/* Overlay Text */}
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white font-Poppins">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 font-Poppins">
           Check Out Our Amazing Works
         </h2>
-        <button className="bg-green-600 text-white px-6 py-3 text-lg font-medium rounded-md hover:bg-green-700">
+        <NavLink to="/services">
+        <button className="bg-green-600 text-white font-Poppins px-6 py-3 text-lg font-medium rounded-md hover:bg-green-700">
           Shop Now
         </button>
+        </NavLink>
       </div>
     </div>
   );
